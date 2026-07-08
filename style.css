@@ -67,7 +67,7 @@ section{
 .category-container{
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 25px;
+    gap: 20px;
     height: px;
 }
 
@@ -81,7 +81,23 @@ section{
     position: relative;
 }
 
+.category-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    );
+}
+
 .category-card h3{
+    z-index: 2;
     position: absolute;
     bottom: 1rem;
     left: 50%;
