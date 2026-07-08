@@ -58,3 +58,17 @@ body{
 .hero-content h3{
     font-size: 30px;
 }
+
+.category-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.category-card{
+    background-image: ;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+}
