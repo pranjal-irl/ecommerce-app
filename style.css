@@ -45,9 +45,16 @@ body{
 
 .hero{
     z-index: 1;
-    padding: 80px;
+    padding: 40px;
     background-image: url("https://cdn.hackclub.com/019f4051-252c-7681-bd00-5ba904d1e8d9/sports_hero_banner_cropped.png");
     background-size: cover;
     border-radius: 10px;
 }
 
+.hero-content h1{
+    font-size: 50px;
+}
+
+.hero-content h3{
+    font-size: 30px;
+}
