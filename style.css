@@ -1,4 +1,14 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
 body{
+    font-family: sans-serif;
     margin-left: 150px;
     margin-right: 150px;
 }
@@ -27,7 +37,6 @@ body{
     align-items: center;
     gap: 5px;
     margin-top: 11px;
-    font-family: sans-serif;
     color: #333;
 }
 
@@ -37,31 +46,29 @@ body{
     align-items: center;
     gap: 5px;
     margin-top: 11px;
-    font-family: sans-serif;
     color: #333;
 }
 
-.cart{
+.wishlist{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    margin-top: 11px;
-    font-family: sans-serif;
+    gap: 2px;
+    margin-top: 12px;
     color: #333;
 }
 
-.icon-wrapper{
+.wishlist-icon-wrapper{
     position: relative;
     display: inline-block;
 }
 
-.badge{
+.wishlist-badge{
     position: absolute;
     top: -6px;
     right: -10px;
 
-    background-color: rgb(255, 111, 0);
+    background-color: #5d5959;
     color: white;
     font-size: 12px !important;
     font-weight: bold;
@@ -75,7 +82,53 @@ body{
     justify-content: center;
 
     padding: 2px;
-    box-sizing: border-box;
+
+    transition: background-color 0.3s ease, tansform 0.2s ease ;
+}
+
+.wishlist-badge:not([data-count="0"]) {
+    background-color: #fe5203;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 12px;
+    color: #333;
+}
+
+.cart-icon-wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.cart-badge{
+    position: absolute;
+    top: -6px;
+    right: -10px;
+
+    background-color: #5d5959;
+    color: white;
+    font-size: 12px !important;
+    font-weight: bold;
+
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2px;
+
+    transition: background-color 0.3s ease, tansform 0.2s ease ;
+}
+
+.cart-badge:not([data-count="0"]) {
+    background-color: #fe5203;
 }
 
 .search-bar input{
@@ -99,6 +152,7 @@ body{
 .nav-bar a{
     color: black;
     text-decoration: none;
+    font-size: 17px;
 }
 
 .nav-bar a:hover{
@@ -124,6 +178,11 @@ body{
 section{
     margin-top: 10px;
     margin-bottom: 40px;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 18;
 }
 
 .category-container{
