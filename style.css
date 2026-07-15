@@ -298,10 +298,19 @@ h2{
     align-items: center;
     margin: 0px;
     padding: 0px;
+    gap: 0;
 }
 
-.rating i{
-    color: orange;
+.material-symbols-outlined {
+    margin: 0;
+    padding: 0;
+    font-size: 22px !important;
+    font-variation-settings:
+    'FILL' 100,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20;
+     color: rgb(255, 145, 0);
 }
 
 .rating p{
@@ -315,16 +324,22 @@ h2{
     color: #333;
 }
 
-.product-details h4 {
-  margin-top: 10px;
-  margin-bottom: 2px;
+.product-name{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 
 .price{
-    margin-top: 7px;
-    margin-bottom: 7px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    margin-top: 2px;
+    margin-bottom: 2px;
     font-size: large;
-    font-weight: bold;
 }
 
 .product-details {
@@ -335,6 +350,28 @@ h2{
 
 .product-details button {
   align-self: flex-end;
+}
+
+.add-button{
+    color: #333;
+    margin-top: 0;
+    background: none;
+    outline: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    border: 1.8px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-button:hover { 
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  border: 2px solid black;
+  color: black;
+}
+
+.add-button:active {
+  transform: scale(1.01); 
 }
 
 .f1{
@@ -364,4 +401,15 @@ h2{
   align-items: center;
   justify-content: center;
   padding: 10px;
+  cursor: pointer;
+}
+
+.f1 > .fa-heart:hover{
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.f1 > .fa-heart:active{
+    font-weight: bold;
+    color: red;
 }
