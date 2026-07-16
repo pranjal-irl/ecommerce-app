@@ -278,14 +278,25 @@ h2{
     background-image: url(images/accessories\ category\ background\ square.jpg);
 }
 
-.product-card{
-    width: 250px;
+.product-slider{
+    display: flex;
+    overflow-x: auto;
+    gap: 25px;
 }
 
-.product-slider img{
+.product-card{
+    width: 250px;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.product-card img{
+    border: 1px solid #333;
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    display: inline-block;
 }
 
 .description{
@@ -325,7 +336,12 @@ h2{
 }
 
 .product-name{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
     margin-top: 10px;
     margin-bottom: 2px;
 }
@@ -365,7 +381,7 @@ h2{
 }
 
 .add-button:hover { 
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
   border: 2px solid black;
   color: black;
 }
@@ -374,7 +390,7 @@ h2{
   transform: scale(1.01); 
 }
 
-.f1{
+.product-card{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -382,11 +398,7 @@ h2{
     margin-top: 12px;
 }
 
-.f1 img{
-    display: inline-block;
-}
-
-.f1 > .fa-heart {
+.product-card > .fa-heart {
   position: absolute;
   z-index: 2;
   top: 13px;
@@ -404,12 +416,12 @@ h2{
   cursor: pointer;
 }
 
-.f1 > .fa-heart:hover{
+.product-card > .fa-heart:hover{
     font-weight: bold;
     border: 2px solid black;
 }
 
-.f1 > .fa-heart:active{
+.product-card > .fa-heart:active{
     font-weight: bold;
     color: red;
 }
