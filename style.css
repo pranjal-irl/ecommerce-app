@@ -31,15 +31,6 @@ body{
     font-size: 33px;
 }
 
-.sign-in{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    margin-top: 11px;
-    color: #333;
-}
-
 .support{
     display: flex;
     flex-direction: column;
@@ -418,10 +409,36 @@ h2{
 
 .product-card > .fa-heart:hover{
     font-weight: bold;
-    border: 2px solid black;
 }
 
 .product-card > .fa-heart:active{
     font-weight: bold;
     color: red;
+}
+
+.why-choose{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    display: block;
+}
+
+.row{
+    color: white;
+    background-color: rgb(60, 58, 58);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.sports, .categories, .footer-support, .follow{
+    display: flex;
+    flex-direction: column;
 }
