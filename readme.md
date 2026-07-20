@@ -1,6 +1,6 @@
 <h1 align="center">ENDURE SPORTS</h1>
 
-<p align="center">This is a sports e-commerce site 
+<p align="center">This is a sports e-commerce static site made with html, css & javascript.
 </p>
 
 ---
@@ -16,57 +16,67 @@
 </p>
 
 > [!IMPORTANT]
-> **AI Usage:** ChatGPT was used only for occasional conceptual guidance and CSS references but not directly copy pasted. A bit of chatgpt I used to make the badges of this README. The content is my me. I took help from my friend who is good at coding. He gave me some guidance while sitting in a google meet with me.
+> **AI Usage:** ChatGPT was used only for occasional conceptual guidance and CSS references but not directly copy pasted. The content is by me. I took help from my friend who is good at coding. He gave me some guidance while sitting in a google meet with me.
 >
+>While I was making this app I wasn't able to figure out that how I am supposed to write the javascript logic beacuse I am completely new at javascript. Sadly after making the hmtl and css entirely by myself, I realized that I will not be able to complete this project with my current javascript knowledge so I used Kimi AI and Chat GPT to write almost the entire javascript logic.
+>
+>I made sure that this project is not AI slop by giving all of my efforts to to describe the logic of javascript to the AI as I wanted in my site. I know that using AI makes the website downgraded but I tested all of the features and gave concrete review to the AI and logic. I tried my best to understand the javascript code and upto my knowledge I think I understand 60% of the javascript logic. For the javascript to work, I had to change 10% of my html and css as provided by the AI.
+>
+>I promise I will make my next Javascript project entirely by myself.
 
-> [NOTE]
-> This webpage is responsive to all screen types (desktop, tablet, phone, etc.) which took me 5-10 hours because I wasn't aware that there was a thing like responsiveness so I made this with the desktop point of view initially but when I realized my mistake, it took me a while to make it responsive.
 >
 > ## Things I learned
-> This is my first webpage so I learnt practically everything but these are some of the most impressive things I learnt :
-> - how to make an html boiler point
-> - how to target an element through css
-> - how to import and use fonts
-> - how to import and use fontawesome icons
-> - how to make a multi-page project
-> - css mapping on ids and classes
-> - hover effect
-> - how to add an overrlay and control its transparency
-> - how to make cdn links of media files and use them
+>
+> This is my second webpage. The cool part is that this time I practiced html and css without referring the docs. I learnt half of the things for the first time but these are some of the most impressive things I learnt :
+> - how to take text input through html and modify it in  css
+> - how to modify a button with css
+> - how to use google material icons
+> - how to use ":active" function in css
+> - added dynamic absolute positionig
+> - how to make a sliding section by hiding the overflow
 
 
 
 ## Screenshot
-![screenshot](assets/image.png)
+![screenshot](images/screenshot.png)
 
 ## Pages
 
 ### Home
 
-The main portfolio page containing:
+The landing page containing:
 
-- My introduction
-- Social link
-- Project description
+- overview
+- catalogue
+- categories
 
-### Timeline
+### Product Page
 
-- The timeline of my life till now explained in detailed phases with memories depicted through hand-written stories, photographs and videos.
+- It consists of the details of product with MRP & rating and option to Add to cart & Buy Now.
+
+### Wishlist
+
+- It displays the items you have wish-listed.
+
+### Cart
+
+- It displays the items you have added to cart and has an option to check-out.
 
 ## Tech Stack
 - HTML
 - CSS
-- GitHub Pages (in starting)
+- Javascript
 - Vercel
+- Google Material Icons
 
-I made this using only custom css. No tailwind/frameworks and components
+I made this using only custom css. No tailwind/frameworks and components.
 
 ## Running Locally
 
 1) Clone the repository:
 
 ```sh
- git clone https://github.com/pranjal-irl/My-Autobiography.git
+ git clonehttps://github.com/pranjal-irl/ecommerce-app.git
 ```
 
 2) Open index.html in your browser.
