@@ -66,316 +66,237 @@
 
             </div>
 
-            <div class="nav-bar">
+            <nav class="nav-bar">
+                <ul>
+                    <li class="dropdown-wrapper">
+                        <a href="#">All Sports</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-sport="football">Football</a></li>
+                            <li><a href="#" data-sport="cricket">Cricket</a></li>
+                            <li><a href="#" data-sport="gym">Gym / Training</a></li>
+                            <li><a href="#" data-sport="running">Running</a></li>
+                            <li><a href="#" data-sport="hiking">Hiking / Trekking</a></li>
+                            <li><a href="#" data-sport="swimming">Swimming</a></li>
+                            <li><a href="#" data-sport="badminton">Badminton</a></li>
+                            <li><a href="#" data-sport="accessories">Accessories</a></li>
+                        </ul>
+                    </li>
 
-                <a href=""> All Sports</a>
-                <a href="">Men</a>
-                <a href="">Women</a>
-                <a href="">Kids</a>
+                    <!-- ADDED MAPPED DATED ROUTING ATTRIBUTES TO THE PARENT NODES -->
+                    <li class="dropdown-wrapper">
+                        <a href="#" data-gender="men">Men</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-gender="men" data-type="cap">Caps</a></li>
+                            <li><a href="#" data-gender="men" data-type="top">Tops / Jerseys</a></li>
+                            <li><a href="#" data-gender="men" data-type="pants">Pants</a></li>
+                            <li><a href="#" data-gender="men" data-type="shorts">Shorts</a></li>
+                            <li><a href="#" data-gender="men" data-type="shoes">Shoes</a></li>
+                            <li><a href="#" data-gender="men" data-type="undergarments">Undergarments</a></li>
+                        </ul>
+                    </li>
 
-            </div>
+                    <li class="dropdown-wrapper">
+                        <a href="#" data-gender="women">Women</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-gender="women" data-type="cap">Caps</a></li>
+                            <li><a href="#" data-gender="women" data-type="top">Tops / Tees</a></li>
+                            <li><a href="#" data-gender="women" data-type="pants">Pants / Leggings</a></li>
+                            <li><a href="#" data-gender="women" data-type="shorts">Shorts</a></li>
+                            <li><a href="#" data-gender="women" data-type="shoes">Shoes</a></li>
+                            <li><a href="#" data-gender="women" data-type="undergarments">Undergarments</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-wrapper">
+                        <a href="#" data-gender="kids">Kids</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-gender="kids" data-type="cap">Caps</a></li>
+                            <li><a href="#" data-gender="kids" data-type="top">Tops / Jerseys</a></li>
+                            <li><a href="#" data-gender="kids" data-type="pants">Pants</a></li>
+                            <li><a href="#" data-gender="kids" data-type="shorts">Shorts</a></li>
+                            <li><a href="#" data-gender="kids" data-type="shoes">Shoes</a></li>
+                            <li><a href="#" data-gender="kids" data-type="undergarments">Undergarments</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
         </header>
 
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <div class="hero-text">
-                    <h1><span>ENDURE</span> YOUR LIMITS</h1>
-                    <h3>Premium gear built for performance</h3>
-
-                </div>
-
-                <div class="hero-image">
-
-                </div>
-
-            </div>
-            
+        <section class="hero" id="hero-slider">
+            <button type="button" class="slider-btn prev-btn" id="prev-slide">❮</button>
+        <!-- The text nodes were removed entirely here to display clean image backgrounds -->
+            <button type="button" class="slider-btn next-btn" id="next-slide">❯</button>
         </section>
 
 
-        <section class="shop-by-sport">
+        <div id="home-view">
 
-            <h2>Shop By Sport</h2>
+            <section class="shop-by-sport">
 
-            <div class="category-container">
+                <h2>Shop By Sport</h2>
 
-                <div class="category-card football">
+                <div class="category-container">
 
-                    <h3>Football</h3>
+                    <div class="category-card football">
 
-                </div>
+                        <h3>Football</h3>
 
-                <div class="category-card cricket">
-
-                    <h3>Cricket</h3>
-
-                </div>
-
-                <div class="category-card gym">
-
-                    <h3>Gym & Yoga</h3>
-
-                </div>
-
-                <div class="category-card running">
-
-                    <h3>Running</h3>
-
-                </div>
-
-                <div class="category-card hiking">
-
-                    <h3>Trekking/Hiking</h3>
-
-                </div>
-
-                <div class="category-card swimming">
-
-                    <h3>Swimming</h3>
-
-                </div>
-
-                <div class="category-card badminton">
-
-                    <h3>Badminton</h3>
-
-                </div>
-
-                <div class="category-card accessories">
-
-                    <h3>Accessories</h3>
-
-                </div>
-
-            </div>
-
-            
-        </section>
-
-        <section class="featured-products">
-
-            <h2>Featured Products</h2>
-
-            <div class="product-slider">
-
-
-                <div class="product-card f1">
-                    <i class="fa-regular fa-heart"></i>
-                    <img src="images/football boots square.png" alt="">
-                    <div class="product-details">
-                        <p class="product-name">Adidas F50 ELITE <span class="description">Laceless Firm Ground Football Boots</span></p>
-                        <div class="rating">
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <p class="no-of-reviews">4.2k</p>
-                        </div>
-                        <p class="price">₹19,999</p>
-                        <button type="button" class="add-button">Add to cart</button>
                     </div>
-                </div>
 
-                <div class="product-card f2">
-                    <i class="fa-regular fa-heart"></i>
-                    <img src="images/ronaldo jersey.jpg" alt="">
-                    <div class="product-details">
-                        <p class="product-name">Ronaldo Portugal Home jersey 2026 <span class="description"></span></p>
-                        <div class="rating">
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <p class="no-of-reviews">7.7k</p>
-                        </div>
-                        <p class="price">₹7999</p>
-                        <button type="button" class="add-button">Add to cart</button>
+                    <div class="category-card cricket">
+
+                        <h3>Cricket</h3>
+
                     </div>
-                </div>
 
-                <div class="product-card f3">
-                    <i class="fa-regular fa-heart"></i>
-                    <img src="images/hiking bag square.webp" alt="">
-                    <div class="product-details">
-                        <p class="product-name">Tripole Colonel Metal Frame Rucksack <span class="description">Hiking Bag</span></p>
-                        <div class="rating">
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate_half</span>
-                            <p class="no-of-reviews">2.0k</p>
-                        </div>
-                        <p class="price">₹3970</p>
-                        <button type="button" class="add-button">Add to cart</button>
+                    <div class="category-card gym">
+
+                        <h3>Gym & Yoga</h3>
+
                     </div>
-                </div>
 
-                <div class="product-card f4">
-                    <i class="fa-regular fa-heart"></i>
-                    <img src="images/yonex.webp" alt="">
-                    <div class="product-details">
-                        <p class="product-name">YONEX ZR-100 <span class="description">Light Aluminium Badminton Racket</span></p>
-                        <div class="rating">
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate_half</span>
-                            <p class="no-of-reviews">8.3k</p>
-                        </div>
-                        <p class="price">₹760</p>
-                        <button type="button" class="add-button">Add to cart</button>
+                    <div class="category-card running">
+
+                        <h3>Running</h3>
+
                     </div>
-                </div>
 
-                <div class="product-card f5">
-                    <i class="fa-regular fa-heart"></i>
-                    <img src="images/cycle square.webp" alt="">
-                    <div class="product-details">
-                        <p class="product-name">Leader Cycle Scout 26T <span class="description">Mountain Bike</span></p>
-                        <div class="rating">
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate_half</span>
-                            <p class="no-of-reviews">2.1k</p>
-                        </div>
-                        <p class="price">₹4999</p>
-                        <button type="button" class="add-button">Add to cart</button>
+                    <div class="category-card hiking">
+
+                        <h3>Trekking/Hiking</h3>
+
                     </div>
-                </div>
 
-                <div class="product-card f6">
-                    <i class="fa-regular fa-heart"></i>
-                    <img src="images/cosco square.webp" alt="">
-                    <div class="product-details">
-                        <p class="product-name">Cosco Cricket Tennis Ball Tuff H.wt. <span class="description">Pack of 6</span></p>
-                        <div class="rating">
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate_half</span>
-                            <p class="no-of-reviews">3.9k</p>
-                        </div>
-                        <p class="price">₹500</p>
-                        <button type="button" class="add-button">Add to cart</button>
+                    <div class="category-card swimming">
+
+                        <h3>Swimming</h3>
+
                     </div>
-                </div>
 
-                <div class="product-card f7">
-                    <i class="fa-regular fa-heart"></i>
-                    <img src="images/skates.webp" alt="">
-                    <div class="product-details">
-                        <p class="product-name">Nivia Sports Super Inline Skate <span class="description">Adult Skates</span></p>
-                        <div class="rating">
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate</span>
-                            <span class="material-symbols-outlined">star_rate_half</span>
-                            <p class="no-of-reviews">1.1k</p>
-                        </div>
-                        <p class="price">₹4280</p>
-                        <button type="button" class="add-button">Add to cart</button>
+                    <div class="category-card badminton">
+
+                        <h3>Badminton</h3>
+
                     </div>
+
+                    <div class="category-card accessories">
+
+                        <h3>Accessories</h3>
+
+                    </div>
+
                 </div>
 
+                
+            </section>
 
-            </div>
+            <section class="featured-products">
 
-        </section>
+                <h2>Featured Products</h2>
 
-        <section class="why-choose">
+                <div class="product-slider"></div>
 
-            <div class="free-shipping">
-                <p>🚚 Free Shipping</p>
-                <p>Free delivery on orders above ₹999</p>
-            </div>
+            </section>
 
-            <div class="premium-quality">
-                <p>🛡️ Premium Quality</p>
-                <p>Durable gear designed for performance</p>
-            </div>
-            
-            <div class="easy-returns">
-                <p>🔄 Easy Returns</p>
-                <p>Hassle-free returns within one week</p>
-            </div>
+            <section class="why-choose">
 
-            <div class="customer-support">
-                <p>🎧 Customer Support</p>
-                <p>Fast assistance whenever you need it</p>
-            </div>
+                <div class="free-shipping">
+                    <p>🚚 Free Shipping</p>
+                    <p>Free delivery on orders above ₹999</p>
+                </div>
 
-        </section>
+                <div class="premium-quality">
+                    <p>🛡️ Premium Quality</p>
+                    <p>Durable gear designed for performance</p>
+                </div>
+                
+                <div class="easy-returns">
+                    <p>🔄 Easy Returns</p>
+                    <p>Hassle-free returns within one week</p>
+                </div>
+
+                <div class="customer-support">
+                    <p>🎧 Customer Support</p>
+                    <p>Fast assistance whenever you need it</p>
+                </div>
+
+            </section>
+
+        </div>
+
+        <div id="dynamic-view" style="display: none;"></div>
 
     </main>
 
     <footer>
+
+        <div class="footer-container">
         
-        <div class="row one">
+            <div class="row one">
 
-            <div class="categories">
-                <h3>CATEGORIES</h3>
-                <a href="">Men</a>
-                <a href="">Women</a>
-                <a href="">Kids</a>
+                <!-- UPDATED SPECIFIC FOOTER CATEGORIES LAYER -->
+            <div class="footer-categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#" data-gender="men" data-type="shoes">Men's Shoes</a></li>
+                    <li><a href="#" data-gender="women" data-type="top">Women's Tops</a></li>
+                    <li><a href="#" data-gender="kids" data-type="shorts">Kids' Shorts</a></li>
+                </ul>
             </div>
 
-            <div class="sports">
-                <h3>SPORTS</h3>
-                <a href="">Football</a>
-                <a href="">Cricket</a>
-                <a href="">Gym & Yoga</a>
-                <a href="">Running</a>
-                <a href="">Trekking/Hiking</a>
-                <a href="">Swimming</a>
-                <a href="">Badminton</a>
-                <a href="">Accessories</a>
-            </div>
-
-            <div class="footer-support">
-                <h3>SUPPORT</h3>
-                <a href="">Payments</a>
-                <a href="">Shipping</a>
-                <a href="">Cancellation & Returns</a>
-                <a href="">FAQ</a>
-            </div>
-
-
-            <div class="socials">
-                <div class="follow">
-                    <h3>FOLLOW US</h3>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
+                <div class="footer-sports">
+                    <h3>Sports</h3>
+                    <ul>
+                        <li><a href="#" data-sport="football">Football</a></li>
+                        <li><a href="#" data-sport="cricket">Cricket</a></li>
+                        <li><a href="#" data-sport="gym">Gym / Training</a></li>
+                        <li><a href="#" data-sport="running">Running</a></li>
+                        <li><a href="#" data-sport="hiking">Hiking / Trekking</a></li>
+                        <li><a href="#" data-sport="swimming">Swimming</a></li>
+                        <li><a href="#" data-sport="badminton">Badminton</a></li>
+                        <li><a href="#" data-sport="accessories">Accessories</a></li>
+                    </ul>
                 </div>
 
-                <div class="mail">
-                    <h3>MAIL US</h3>
-                    <i class="fa-regular fa-envelope"></i>
+                <div class="footer-support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#" data-page="support">Contact Support</a></li>
+                        <li><a href="#" data-page="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#" data-page="terms-of-use">Terms of Use</a></li>
+                        <li><a href="#" data-page="order-tracking">Order Tracking</a></li>
+                    </ul>
                 </div>
+
+
+                <div class="socials">
+                    <div class="follow">
+                        <h3>FOLLOW US</h3>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+
+                    <div class="mail">
+                        <h3>MAIL US</h3>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+
             </div>
 
-        </div>
 
+            <div class="row two">
 
-        <div class="row two">
+                <div class="logo">
+                    <img src="images/endure white.png" alt="" width="250px">
+                </div>
 
-            <div class="logo">
-                <img src="images/endure white.png" alt="" width="250px">
-            </div>
+                <div class="copyright">
+                    <p>©2026 Endure India Pvt. Ltd.</p>
+                </div>
 
-            <div class="copyright">
-                <p>©2026 Endure India Pvt. Ltd.</p>
             </div>
 
         </div>
